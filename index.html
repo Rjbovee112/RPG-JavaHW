@@ -5,45 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="java.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Password Generator</title>
 </head>
 
 <body>
     <div class="container">
-        <h2>Random Password Generator
-            <div class="results-container">
-                <span id="results"></span>
-                <button class="btn" id="clipboard">
-                    <i class="far fa-clipboard"></i>
-                </button>
-            </div>
-            <div class="settings">
-                <div class="setting">
-                    <label for="lenght">Password Length</label>
-                    <input type="number" id="lenght" min="8" max="128" value="20" />
-                </div>
-                <div class="setting">
-                    <label for="uppercase">Include uppercase letters</label>
-                    <input type="checkbox" id="uppercase" checked />
-                </div>
-                <div class="setting">
-                    <label for="lowercase">Include lowercase letters</label>
-                    <input type="checkbox" id="lowercase" checked />
-                </div>
-                <div class="setting">
-                    <label for="uppercase">Include numeric characters</label>
-                    <input type="checkbox" id="numeric" checked />
-                </div>
-                <div class="setting">
-                    <label for="uppercase">Include special characters</label>
-                    <input type="checkbox" id="special" checked />
-                </div>
-            </div>
-            <button class="btn btn-large" id="generate">Generate Password</button>
+        <h1>Password Generator</h1>
+        <h2>password</h2>
+        <form>
+            <label for="">Number Of Characters</label>
+            <input type="range">
+            <input type="number">
+        </form>
+
+
     </div>
 
-    <script src="java.js"></script>
-    <script src="code.css"></script>
 </body>
 
 </html>

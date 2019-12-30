@@ -16,3 +16,14 @@ The user will be prompted to choose from the following password criteria:
 
   * Uppercase characters
 
+# Random Password Generator 
+
+## Overview
+
+The purpose of this application is to create a random password using uppercase letters, lowercase letters, numbers and symbols.  It will also allow you to save the new password to a clipboard.
+
+## Tech and Features Used
+
+*HTML
+*CSS
+*Javascript

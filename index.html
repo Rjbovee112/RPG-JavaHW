@@ -15,9 +15,21 @@
         <h1>Password Generator</h1>
         <h2>password</h2>
         <form>
-            <label for="">Number Of Characters</label>
-            <input type="range">
-            <input type="number">
+            <label for="characterNumber">Number Of Characters</label>
+            <input type="range" min="8" max="128" value="8" id="characterRange">
+            <input type="number" min="8" max="128" value="8" id="characterNumber">
+
+            <label for="includedUppercase">Include Uppercase characters</label>
+            <input type="checkbox" id="includedUppercase">
+
+            <label for="includedLowercase">Include Lowercase characters</label>
+            <input type="checkbox" id="includedLowercase">
+
+            <label for="includedNumeric">Include Numeric characters</label>
+            <input type="checkbox" id="includedUNumeric">
+
+            <label for="includedSpecial">Include Special characters</label>
+            <input type="checkbox" id="includedSpecial">
         </form>
 
 

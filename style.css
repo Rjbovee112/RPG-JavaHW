@@ -36,7 +36,7 @@ label {
     font-weight: bold;
 }
 
-.slider {
+.number-box {
     display: flex;
     align-items: center;
 }
@@ -55,5 +55,6 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+    word-break: break-all;
 }
 

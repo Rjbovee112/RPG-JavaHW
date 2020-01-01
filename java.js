@@ -18,5 +18,5 @@ form.addEventListener('submit', e => {
 })
 
 function generatePassword(characterNumber, includedUppercase, includedLowercase, includedNumeric, includedSpecial) {
-    
+   String.fromCharCode(65) 
 }

@@ -27,6 +27,7 @@ The purpose of this application is to create a random password generator using u
 *HTML
 *CSS
 *Javascript
+*Character Codes
 
 ### How to use
 

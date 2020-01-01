@@ -4,6 +4,7 @@ const includedNumericElement = document.getElementById('includedNumeric')
 const includedSpecialElement = document.getElementById('includedSpecial')
 const characterNumber = document.getElementById('characterNumber')
 const form = document.getElementById('passwordGen')
+const passwordDisplay = document.getElementById('passwordDisplay')
 
 const LOWERCASE_CHAR_CODES = arraryFromLowToHigh(97, 122)
 const UPPERCASE_CHAR_CODES = arraryFromLowToHigh(65, 90)
@@ -20,11 +21,24 @@ form.addEventListener('submit', e => {
     const includedNumeric = includedNumericElement.checked
     const includedSpecial = includedSpecialElement.checked
     const pasword = genPassword(characterNumber, includedUppercase, includedLowercase, includedNumeric, includedSpecial)
+    passwordDisplay.innerText = password
 })
 
+//console.log to see if the desired charater comes up
 function generatePassword(characterNumber, includedUppercase, includedLowercase, includedNumeric, includedSpecial) {
-    console.log()
+    let charCodes = LOWERCASE_CHAR_CODES
+    if (includedUppercase) charCodes = charCodes.concat(UPPERCASE_CHAR_CODES)
+    if (includedNumeric) charCodes = charCodes.concat(NUMBER_CHAR_CODES)
+    if (includedSpecial) charCodes = charCodes.concat(SPECIAL_CHAR_CODES)
+
+    const passwordCharacters = []
+    for (let i = 0; i < characterAmount; i++) {
+        const characterCode = charCodes[Math.floor(Math.random() * charCodes.length)]
+        passwordCharacters.push(String.fromCharCode(characterCode))
+    }
+    return passwordCharacters.join('')
 }
+
 
 function arraryFromLowToHigh(low, high) {
     const array = []

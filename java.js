@@ -5,6 +5,11 @@ const includedSpecialElement = document.getElementById('includedSpecial')
 const characterNumber = document.getElementById('characterNumber')
 const form = document.getElementById('passwordGen')
 
+const LOWERCASE_CHAR_CODES = arraryFromLowToHigh(97, 122)
+const UPPERCASE_CHAR_CODES = arraryFromLowToHigh(65, 90)
+const NUMBER_CHAR_CODES = arraryFromLowToHigh(48, 57)
+const SPECIAL_CHAR_CODES = arraryFromLowToHigh(33, 47).concat(arraryFromLowToHigh(58, 64)).concat(arraryFromLowToHigh(91, 96)).concat(arraryFromLowToHigh(123, 126))
+
 
 
 form.addEventListener('submit', e => {
@@ -18,5 +23,17 @@ form.addEventListener('submit', e => {
 })
 
 function generatePassword(characterNumber, includedUppercase, includedLowercase, includedNumeric, includedSpecial) {
-   String.fromCharCode(65) 
+    console.log()
 }
+
+function arraryFromLowToHigh(low, high) {
+    const array = []
+    for (let i = low; i <= high; i++) {
+        array.push(i)
+    }
+    return array
+}
+
+
+
+String.fromCharCode(65)

@@ -32,3 +32,7 @@ The purpose of this application is to create a random password generator using u
 ### How to use
 
 Click on the number of characters that you would like in your password under the 'number of characters' input.  Then ckick on the boxes that you would like to use, Uppercase, Lowercase, Numberical and Symbols.  Once those items are selected click the generate password button and it will creat a random password.
+
+# Websites 
+
+Char Codes https://www.petefreitag.com/cheatsheets/ascii-codes/

@@ -15,12 +15,12 @@ const SPECIAL_CHAR_CODES = arraryFromLowToHigh(33, 47).concat(arraryFromLowToHig
 
 form.addEventListener('submit', e => {
     e.preventDefault()
-    const characterNumber = characterNumber.value
+    const characterNumberText = characterNumber.value
     const includedUppercase = includedUppercaseElement.checked
     const includedLowercase = includedLowercaseElement.checked
     const includedNumeric = includedNumericElement.checked
     const includedSpecial = includedSpecialElement.checked
-    const pasword = genPassword(characterNumber, includedUppercase, includedLowercase, includedNumeric, includedSpecial)
+    const password = generatePassword(characterNumberText, includedUppercase, includedLowercase, includedNumeric, includedSpecial)
     passwordDisplay.innerText = password
 })
 
@@ -32,7 +32,7 @@ function generatePassword(characterNumber, includedUppercase, includedLowercase,
     if (includedSpecial) charCodes = charCodes.concat(SPECIAL_CHAR_CODES)
 
     const passwordCharacters = []
-    for (let i = 0; i < characterAmount; i++) {
+    for (let i = 0; i < characterNumber; i++) {
         const characterCode = charCodes[Math.floor(Math.random() * charCodes.length)]
         passwordCharacters.push(String.fromCharCode(characterCode))
     }
